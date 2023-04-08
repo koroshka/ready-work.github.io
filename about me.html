@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание веб-сайтов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img src="img/logo.svg" alt="логотип">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li class="menu_list"><a class="menu_link" href="index.html">Главная</a></li>
+                <li class="menu_list"><a class="menu_link menu_link_active" href="students.html">Студенты</a></li>
+                <li class="menu_list"><a class="menu_link" href="about.html">О курсе</a></li>
+                <li class="menu_list"><a class="menu_link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="button" >Войти</button>
+            </header>
+<main class="my-info">
+<h1 class="title-me">Обо мне</h1>
+<img class="photo" src="img/myphoto.jpg" alt="мое фото">
+ 
+    <h3>
+        Контактная информация
+    </h3>
+    <p>
+        тел. +79030025753 <br>
+        email: hofnar@yandex.ru
+    </p>
+    <h3>Образование</h3>
+    <p>В 2010 году окончила <i> Институт международных социально-гуманитарных связей</i> по специальности <strong> Менеджер государственного и муниципального управления.</strong></p>
+    <h3>Опыт работы</h3>
+    <p>С 2010 года работала в Исполнительной дирекции Пенсионного фонда Российской Федерации. Моя карьера началась с должности ведущего специалиста-эксперта информационно-технического отдале Учебно-методического центра ПФР. Впоследствии после успешного прохождения аттестации была рекомендована на должность заместителя начальника отдела. В должности заместителя начальника отдела занималась ведением текущей документации, техническим сопровождением внутриорганизационных мероприятий, организацией и сопровождением дистанционного обучения сотрудников во всей территории страны, администрированием различных информ систем а также многим другим. Имею две ведомственные награды: <span class="colortext"> "Благодарность Председателя правления ПФР" и "Отличник Пенсионного фонда Российской Федерации"</span></p>
+  
+
+
+<div class="popup visible">
+        <form action="form.php" method="get">
+        <p class="popup_text">
+            Войти на сайт
+        </p>
+        <p>
+            <input class="login" placeholder="Логин">
+        </p>
+        <p>
+            <input class="password" placeholder="Пароль">
+        </p>
+        <button class="button_popup" type="submit">Войти</button>
+        </form>
+    </div>
+
+</main>
+</div>
+
+            <footer class="footer">
+                2023 © <a class="footer_text" href="index.html">учебный центр</a>
+           </footer>
+        
+            <script>
+            const buttonEl = document.querySelector ('.button');
+            const blockEl = document.querySelector ('.popup');
+        
+            buttonEl.addEventListener('click', function (e) {
+                blockEl.classList.toggle('visible');
+            });
+        
+            
+           
+            </script>
+    
+</body>
+</html>

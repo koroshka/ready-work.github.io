@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание веб-сайтов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <header class="header">
+<a class="logo" href="index.html">
+    <img src="img/logo.svg" alt="logotype">
+</a>
+<nav>
+    <ul class="menu">
+        <li class="menu_list"><a class="menu_link" href="index.html">Главная</a></li>
+        <li class="menu_list"><a class="menu_link" href="students.html">Студенты</a></li>
+        <li class="menu_list"><a class="menu_link menu_link_active" href="about.html">О курсе</a></li>
+        <li class="menu_list"><a class="menu_link" href="contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<a class="button" href="#">Войти</a>
+    </header>
+    <main class="content">
+        <div class="video-info">
+     <h1 class="heading-about">О курсе 📱</h1>
+     <p class="text-video">Посмотрите видео о нас</p>
+     <img width="820" height="549" src="img/video.jpg" alt="видео">
+        </div>
+    </main>
+    </div>
+    <footer class="footer">
+        2023 © <a class="footer_text" href="index.html">учебный центр</a>
+   </footer>
+   <div class="popup visible">
+    <form action="form.php" method="get">
+    <p class="popup_text">
+        Войти на сайт
+    </p>
+    <p>
+        <input class="login" placeholder="Логин">
+    </p>
+    <p>
+        <input class="password" placeholder="Пароль">
+    </p>
+    <button class="button_popup" type="submit">Войти</button>
+    </form>
+</div>
+
+
+<script>
+const buttonEl = document.querySelector ('.button');
+const blockEl = document.querySelector ('.popup');
+
+buttonEl.addEventListener('click', function (e) {
+blockEl.classList.toggle('visible');
+});
+
+
+
+</script>
+</body>
+</html>
